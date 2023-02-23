@@ -1,5 +1,6 @@
 import pandas as pd
 import justpy as jp
+from datetime import datetime
 
 # create data frame
 temp = pd.read_csv('Parcels.txt', sep='|', header=0)
@@ -13,6 +14,10 @@ df["ADDRESS"] = df["ADDRESS"].str.replace(" B ", "B ")
 df["ADDRESS"] = df["ADDRESS"].str.replace(" C ", "C ")
 df["ADDRESS"] = df["ADDRESS"].str.replace(" D ", "D ")
 df["ADDRESS"] = df["ADDRESS"].str.replace(" F ", "F ")
+
+
+# better date format
+df['SALE_DATE'] = pd.to_datetime(df['SALE_DATE'], format='%m/%d/%Y').dt.date
 
 
 # simple google maps link
