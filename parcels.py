@@ -59,7 +59,7 @@ while(running):
         df = df.sort_values(by=["STREET_NAME", "STREET_NUMBER"])
         print("Data sorted by street name then street number.")
     elif(x == "export"):
-        df.to_excel(r'.\Parcels.xlsx', index=False)
+        df.to_excel('Parcels.xlsx', index=False)
         print("Exported to Parcels.xlsx")
     elif(x == "grid"):
         print("rendering grid...")
