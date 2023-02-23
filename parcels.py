@@ -38,7 +38,7 @@ def basic_grid():
 # if added columns are not wanted in output, can use this
 #     print(df[["PIN","ADDRESS","OWNER","MARKET_VALUE","SALE_DATE","SALE_PRICE","LINK","GMAPS"]])
 
-usage = 'USAGE: print: prints data, printalll: prints all data\n export: exports data to excel file, grid: render in ag grid to view in browser\n sortname: sorts by first name, sortadd: sorts by street name then street address, quit: quit'
+usage = 'USAGE: print: prints data, printall: prints all data\n export: exports data to excel file, grid: render in ag grid to view in browser\n sortname: sorts by first name, sortadd: sorts by street name then street address, quit: quit'
 
 running = True
 

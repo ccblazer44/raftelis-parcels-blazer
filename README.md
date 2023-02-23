@@ -25,7 +25,7 @@ USAGE:
 
    print: prints data
    
-   printalll: prints all data
+   printall: prints all data
    
    export: exports data to excel file
    
