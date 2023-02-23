@@ -31,7 +31,8 @@ df["LAST_NAME"] = df["OWNER"].str.split(",", n=1).str[0]
 
 def basic_grid():
     wp = jp.WebPage()
-    df.jp.ag_grid(a=wp)  # a=wp adds the grid to WebPage wp
+    grid = df.jp.ag_grid(a=wp)  # a=wp adds the grid to WebPage wp
+    grid.options.enableCellTextSelection = True
     return wp
 
 # if added columns are not wanted in output, can use this
